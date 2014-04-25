@@ -21,6 +21,12 @@
 		8713FEE0190907940091BD23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8713FEC2190907940091BD23 /* UIKit.framework */; };
 		8713FEE8190907940091BD23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8713FEE6190907940091BD23 /* InfoPlist.strings */; };
 		8713FEEA190907940091BD23 /* comboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FEE9190907940091BD23 /* comboTests.m */; };
+		8713FF02190908750091BD23 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8713FF01190908750091BD23 /* QuartzCore.framework */; };
+		8713FF1C19090A390091BD23 /* SelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FF1419090A390091BD23 /* SelectionCell.m */; };
+		8713FF1D19090A390091BD23 /* SelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8713FF1519090A390091BD23 /* SelectionCell.xib */; };
+		8713FF1E19090A390091BD23 /* TableViewWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FF1719090A390091BD23 /* TableViewWithBlock.m */; };
+		8713FF1F19090A390091BD23 /* UITableView+DataSourceBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FF1919090A390091BD23 /* UITableView+DataSourceBlocks.m */; };
+		8713FF2019090A390091BD23 /* UITableView+DelegateBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FF1B19090A390091BD23 /* UITableView+DelegateBlocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,16 @@
 		8713FEE5190907940091BD23 /* comboTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "comboTests-Info.plist"; sourceTree = "<group>"; };
 		8713FEE7190907940091BD23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8713FEE9190907940091BD23 /* comboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = comboTests.m; sourceTree = "<group>"; };
+		8713FF01190908750091BD23 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8713FF1319090A390091BD23 /* SelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionCell.h; sourceTree = "<group>"; };
+		8713FF1419090A390091BD23 /* SelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionCell.m; sourceTree = "<group>"; };
+		8713FF1519090A390091BD23 /* SelectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionCell.xib; sourceTree = "<group>"; };
+		8713FF1619090A390091BD23 /* TableViewWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewWithBlock.h; sourceTree = "<group>"; };
+		8713FF1719090A390091BD23 /* TableViewWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewWithBlock.m; sourceTree = "<group>"; };
+		8713FF1819090A390091BD23 /* UITableView+DataSourceBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DataSourceBlocks.h"; sourceTree = "<group>"; };
+		8713FF1919090A390091BD23 /* UITableView+DataSourceBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DataSourceBlocks.m"; sourceTree = "<group>"; };
+		8713FF1A19090A390091BD23 /* UITableView+DelegateBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DelegateBlocks.h"; sourceTree = "<group>"; };
+		8713FF1B19090A390091BD23 /* UITableView+DelegateBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DelegateBlocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8713FF02190908750091BD23 /* QuartzCore.framework in Frameworks */,
 				8713FEC1190907940091BD23 /* CoreGraphics.framework in Frameworks */,
 				8713FEC3190907940091BD23 /* UIKit.framework in Frameworks */,
 				8713FEBF190907940091BD23 /* Foundation.framework in Frameworks */,
@@ -82,6 +99,7 @@
 		8713FEB2190907940091BD23 = {
 			isa = PBXGroup;
 			children = (
+				8713FF1219090A390091BD23 /* ComboList */,
 				8713FEC4190907940091BD23 /* combo */,
 				8713FEE3190907940091BD23 /* comboTests */,
 				8713FEBD190907940091BD23 /* Frameworks */,
@@ -101,6 +119,7 @@
 		8713FEBD190907940091BD23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8713FF01190908750091BD23 /* QuartzCore.framework */,
 				8713FEBE190907940091BD23 /* Foundation.framework */,
 				8713FEC0190907940091BD23 /* CoreGraphics.framework */,
 				8713FEC2190907940091BD23 /* UIKit.framework */,
@@ -150,6 +169,22 @@
 				8713FEE6190907940091BD23 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8713FF1219090A390091BD23 /* ComboList */ = {
+			isa = PBXGroup;
+			children = (
+				8713FF1319090A390091BD23 /* SelectionCell.h */,
+				8713FF1419090A390091BD23 /* SelectionCell.m */,
+				8713FF1519090A390091BD23 /* SelectionCell.xib */,
+				8713FF1619090A390091BD23 /* TableViewWithBlock.h */,
+				8713FF1719090A390091BD23 /* TableViewWithBlock.m */,
+				8713FF1819090A390091BD23 /* UITableView+DataSourceBlocks.h */,
+				8713FF1919090A390091BD23 /* UITableView+DataSourceBlocks.m */,
+				8713FF1A19090A390091BD23 /* UITableView+DelegateBlocks.h */,
+				8713FF1B19090A390091BD23 /* UITableView+DelegateBlocks.m */,
+			);
+			path = ComboList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8713FF1D19090A390091BD23 /* SelectionCell.xib in Resources */,
 				8713FED7190907940091BD23 /* Images.xcassets in Resources */,
 				8713FEC9190907940091BD23 /* InfoPlist.strings in Resources */,
 				8713FED2190907940091BD23 /* Main.storyboard in Resources */,
@@ -250,6 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8713FF2019090A390091BD23 /* UITableView+DelegateBlocks.m in Sources */,
+				8713FF1F19090A390091BD23 /* UITableView+DataSourceBlocks.m in Sources */,
+				8713FF1E19090A390091BD23 /* TableViewWithBlock.m in Sources */,
+				8713FF1C19090A390091BD23 /* SelectionCell.m in Sources */,
 				8713FECF190907940091BD23 /* ALIENAppDelegate.m in Sources */,
 				8713FECB190907940091BD23 /* main.m in Sources */,
 				8713FED5190907940091BD23 /* ALIENViewController.m in Sources */,
@@ -457,6 +497,7 @@
 				8713FEEF190907940091BD23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8713FEF0190907940091BD23 /* Build configuration list for PBXNativeTarget "comboTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +506,7 @@
 				8713FEF2190907940091BD23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
